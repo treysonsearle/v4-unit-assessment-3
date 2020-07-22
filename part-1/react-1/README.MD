@@ -6,7 +6,7 @@
 
 You are going to create an app from the ground up to practice what we have covered so far about React. Our app is going to display a collection of books. When a user clicks a book, it's title should be added to their "shelf". There are some other features we'll get into later on as well.
 
-<iframe src="https://giphy.com/embed/Xa9FZNxxlHNQ4D56fg" width="480" height="256" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/Xa9FZNxxlHNQ4D56fg">via GIPHY</a></p>
+<img src="https://giphy.com/embed/Xa9FZNxxlHNQ4D56fg" width="600" >
 
 ## Setup
 
