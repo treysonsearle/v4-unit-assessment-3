@@ -44,7 +44,7 @@ One of the biggest tools at the developer's disposal is the browser's built-in d
 
 
 
-# React -- notes from before
+# React
 ## Project Summary
 
 You are going to create an app from the ground up to practice what we have covered so far about React. The app is going to display a collection of books. When a user clicks a book, it's title should be added to their "shelf". You will also add the ability to search the list of books and clear out the shelf of all titles.
