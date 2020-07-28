@@ -47,7 +47,7 @@ You are going to create an app from the ground up to practice what we have cover
 This app is supposed to challenge you and stretch your skills! Work hard at it and remember that you can reference whatever notes and code you need to. There won't be any solutions but the directions should provide a good amount of guidance.
 
 <img src="react/bookist.gif" width="600" id='gif'>
-<label for='gif'>preview of the app</label>
+<label for='gif'>preview of the app (search feature is advanced)</label>
 
 ### Planning
 In the react folder of this repo, there is an example [wireframe](react/bookist-wireframe.png) that shows a possible setup for your components (the dark gray box around book list and shelf just indicates a container element). Feel free to jot down notes or sketches that will help you plan this app while you read through this section. Any planning will help you as you get into coding.
@@ -55,14 +55,12 @@ In the react folder of this repo, there is an example [wireframe](react/bookist-
 The app needs to have the following features:
 
 - display a list of book covers, titles, and authors (from data.js)
-- if a book is clicked, its title should be added to the shelf
-- ability to search the list of books (by title)  
-- clear search which should restore the original list of books and clear the input field
+- if a book cover is clicked, its title should be added to the shelf
 - clear all the titles from the shelf
 
 Think about what kind of handler functions you'll need for these features and what JSX elements they'll be connected to. What state will be needed in the different components? Which components could be functional? It's okay if things change as you code, but it's nice to have ideas going in.
 
-Note: this app isn't about your CSS skills, so save fancy styling for the end. Feel free to throw in any functional style you'd like along the way though.
+Note: this app isn't about your CSS skills, so save fancy styling for the end. Feel free to throw in any functional style you'd like along the way though (changing image sizes, etc.)
 
 ## Setup 
 
@@ -86,9 +84,7 @@ If you would prefer to attempt this app without guidance, feel free to do so. Yo
 
 ## Instructions
 
-### Step 1
-
-Goal: create and display a header component
+### Step 1: Create and display a header component
 
 #### Header.js
 - in your `Components` folder, create a new component called `Header.js`
@@ -99,6 +95,72 @@ Goal: create and display a header component
 - import the `Header` component
 - render `Header` as a child of `App`
 
-### Step 2
+### Step 2: Create and display book list and shelf components
 
-Goal: bring our data into App.js
+#### BookList.js
+- in your `Components` folder, create a new component called `BookList.js`
+- the component should display the test string 'book list'
+
+#### Shelf.js
+- in your `Components` folder, create a new component called `Shelf.js`
+- the component should display the test string 'shelf'
+
+#### App.js
+- import both `BookList` and `Shelf` into `App`
+- render `BookList` and `Shelf` as children of app
+- optional: add in some CSS so that `BookList` and `Shelf` are side by side instead of stacked
+
+### Step 3: Bring data into the app
+
+#### App.js
+- import the book data from `data.js` (which you should have copied over from this repo)
+- convert `App.js` into a class component
+- in `App`'s state, initialize a property called 'books' whose value is the data you imported
+
+### Step 4: Pass the book data to BookList where it will be displayed
+
+#### App.js
+- pass the book data from state down to `BookList` as a prop named 'books'
+
+#### BookList.js
+- map over the books array passed down on props and store the result in a variable called mappedBooks
+- remember the callback passed to that map function should return JSX for each book in the array -- it should show the image, title, and author
+- make sure you're rendering your mappedBooks
+
+### Step 5: Write a function to add titles to the shelf and display them
+
+#### App.js
+- create a new property on state called 'shelf' and set it to an empty array
+- write a function called `addToShelf` that will be able to add a book's title into the shelf array on state (hint: it could accept a parameter)
+- make sure your function is bound to `App`
+- pass the `addToShelf` function down to `BookList` as a prop
+- pass the shelf array from state down to the `Shelf` component as prop
+
+#### BookList.js
+- assign the `addToShelf` function to the `onClick` property of the book cover images (remember you have access to all the properties of each book object inside your map callback)
+
+#### Shelf.js
+- map over the shelf array passed down on props and store the result in a variable called mappedTitles
+- the callback of the map function should return JSX for each title
+- make sure to render your mappedTitles
+
+### Step 6: Write a function to clear the shelf
+
+#### App.js
+- write a function called `clearShelf` that will reset the shelf array on state to empty
+- make sure your function is bound to `App`
+- pass the `clearShelf` function down to the `Shelf` component as a prop
+
+#### Shelf.js
+- make a button with the text 'clear shelf' on it
+- set an `onClick` property on the button that fires the `clearShelf` function that was passed down as a prop
+
+## Congrats! You have a functioning app!
+
+You are now done with the core part of this skills check. If you still have time (or want extra practice outside of class), here are some suggestions:
+
+- add styling into this app, you can make it look like the mockup or do your own thing
+- make a searchBar component
+    - start out with searching by title
+    - add in searching by author too (from the same input field)
+    - add a 'clear search' button that will set the BookList back to the original and clear the input field
