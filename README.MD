@@ -3,7 +3,7 @@
 # Devmountain Web - Skills Check 3
 
 ## Project Summary
-[linky link](./README.MD#End)
+[linky link](./README.MD#React)
 Welcome to skills check 3! This skills check will have JavaScript sections similar to skills checks 1 & 2 as well as a React portion which is similar to afternoon projects that you have done. Remember to use past code, lecture notes & slides, and reference websites to help you as you complete this skills check.
 
 You should be able to finish this skills check in an 8 hour day. For part time programs this means it should take two days. On the first day, you should aim to complete classes, closures, and react-1. On the second day, you should aim to complete react-2. This skills check will cover topics from these lectures:
