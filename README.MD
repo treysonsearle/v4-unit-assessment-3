@@ -87,7 +87,6 @@ If you would prefer to attempt this app without guidance, feel free to do so. Yo
 ## Instructions
 
 ### Step 1
-<hr>
 
 Goal: create and display a header component
 
@@ -101,6 +100,5 @@ Goal: create and display a header component
 - render `Header` as a child of `App`
 
 ### Step 2
-<hr>
 
 Goal: bring our data into App.js
