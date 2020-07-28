@@ -20,6 +20,9 @@ You should be able to finish this skills check in an 8 hour day. For part time p
 
 # JavaScript
 
+## Instructions
+The sections for classes and closures will each consist of following the same series of instructions, but with different javascript files and spec runnner files for each folder.
+
 ## Classes
 
 - Open `./practice-classes.js` with your code editor.
@@ -39,12 +42,25 @@ You should be able to finish this skills check in an 8 hour day. For part time p
 # React
 ## Project Summary
 
-You are going to create an app from the ground up to practice what we have covered so far about React. The app is going to display a collection of books. When a user clicks a book cover, its title should be added to their "shelf". You will also add the ability to search the list of books and clear the search which should restore the original list of books and clear the input field. Users should also have the option to clear all the titles from the shelf. You can see a quick run through of that functionality below. There is also a higher quality mockup in the images folder of this repo.
+You are going to create an app from the ground up to practice what we have covered so far about React. The app is going to display a collection of books and users can make a list of titles from the collection. You can see a quick run through of that functionality below. There is also a higher quality [mockup](react/bookist-mockup.png) in the react folder of this repo and a deeper explanation later in these directions.
 
-This app is supposed to challenge you and stretch your skills! Work hard at it and remember that you can reference whatever notes and code you need to. There won't be any solutions but the directions should provide a good amount of guidance. 
+This app is supposed to challenge you and stretch your skills! Work hard at it and remember that you can reference whatever notes and code you need to. There won't be any solutions but the directions should provide a good amount of guidance.
 
-<img src="images/bookist.gif" width="600" id='gif'>
+<img src="react/bookist.gif" width="600" id='gif'>
 <label for='gif'>preview of the app</label>
+
+### Planning
+In the react folder of this repo, there is an example [wireframe](react/bookist-wireframe.png) that shows a possible setup for your components (the dark gray box around book list and shelf just indicates a container element). Feel free to jot down notes or sketches that will help you plan this app. Any planning will help you as you get into the instructions.
+
+The app needs to have the following features:
+
+- display a list of book covers, titles, and authors (from data.js)
+- if a book is clicked, its title should be added to the shelf
+- ability to search the list of books (by title)  
+- clear search which should restore the original list of books and clear the input field
+- clear all the titles from the shelf
+
+Think about what kind of handler functions you'll need for these features and what JSX elements they'll be connected to. What state will be needed in the different components? Which components could be functional? It's okay if things change as you code, but it's nice to have ideas going in.
 
 ## Setup 
 
@@ -58,14 +74,13 @@ You are going to need to create your own react app for this portion of the skill
 6. back in your terminal, make sure you are in your new app's directory and run ```git remote add origin YOUR_REPO_URL``` and ```git push -u origin master```
 7. refresh GitHub and your boilerplate React app should be there
 8. copy the `data.js` file from this repo into the `/src` folder of your new react app 
-9. take a minute to look over the data to see what you'll be working with
-10. create a `Components` folder inside your `src` folder
-11. in App.js, delete the `<header>` tag and everything inside it, in its place, put an `<h1>` tag containing 'bookist'
-12. run `npm start` and you should see 'bookist' in your browser
+9. create a `Components` folder inside your `src` folder
+10. in App.js, delete the `<header>` tag and everything inside it, in its place, put an `<h1>` tag containing 'bookist'
+11. run `npm start` and you should see 'bookist' in your browser
 
 ## DIY Option
 
-If you would prefer to attempt this app without guidance, feel free to do so. You can just go off of the mockup and project summary. The instructions below can still act as an outline or support, but keep in mind that they probably won't match what you do exactly, which is okay. There are a bunch of different ways to code!
+If you would prefer to attempt this app without guidance, feel free to do so. You can just go off of the mockup and project summary. The instructions below can still act as an outline or support, but keep in mind that they probably won't match what you do exactly, which is okay. There are a bunch of different ways to code! 
 
 ## Step 1
 
