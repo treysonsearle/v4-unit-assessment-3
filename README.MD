@@ -25,15 +25,15 @@ The sections for classes and closures will each consist of following the same se
 
 ## Classes
 
-- Open `./practice-classes.js` with your code editor.
-- Open `./SpecRunner-classes.html` with your browser.
+- Open `practice-classes.js` with your code editor.
+- Open `SpecRunner-classes.html` with your browser.
 - Complete the problems in `practice-classes.js` and check your progress using the spec runner
 - Remember that you can use the Chrome Dev Tools (inspect)
 
 ## Closures
 
-- Open `./practice-closures.js` with your code editor.
-- Open `./SpecRunner-closures.html` with your browser.
+- Open `practice-closures.js` with your code editor.
+- Open `SpecRunner-closures.html` with your browser.
 - Complete the problems in `practice-closures.js` and check your progress using the spec runner
 - Remember that you can use the Chrome Dev Tools (inspect)
 
@@ -64,7 +64,7 @@ Think about what kind of handler functions you'll need for these features and wh
 
 ## Setup 
 
-You are going to need to create your own react app for this portion of the skills check. You will also need to intialize a remote repository on GitHub. Follow the directions below to create both of those now so we can connect our app to the repo and push changes as we go. We'll also get the bare bones set up of our app done and open it in the browser to make sure everything's working.
+You are going to need to create your own react app. You will also need to intialize a remote repository on GitHub. Follow the directions below to create both of those now so we can connect our app to the repo and push changes as we go. We'll also get the bare bones set up of our app done and open it in the browser to make sure everything's working.
 
 1. in your terminal, navigate to the folder where you want to store your new app (not this folder)
 2. run ```npx create-react-app APP_NAME```
