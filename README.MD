@@ -50,7 +50,7 @@ This app is supposed to challenge you and stretch your skills! Work hard at it a
 <label for='gif'>preview of the app</label>
 
 ### Planning
-In the react folder of this repo, there is an example [wireframe](react/bookist-wireframe.png) that shows a possible setup for your components (the dark gray box around book list and shelf just indicates a container element). Feel free to jot down notes or sketches that will help you plan this app. Any planning will help you as you get into the instructions.
+In the react folder of this repo, there is an example [wireframe](react/bookist-wireframe.png) that shows a possible setup for your components (the dark gray box around book list and shelf just indicates a container element). Feel free to jot down notes or sketches that will help you plan this app while you read through this section. Any planning will help you as you get into coding.
 
 The app needs to have the following features:
 
@@ -61,6 +61,8 @@ The app needs to have the following features:
 - clear all the titles from the shelf
 
 Think about what kind of handler functions you'll need for these features and what JSX elements they'll be connected to. What state will be needed in the different components? Which components could be functional? It's okay if things change as you code, but it's nice to have ideas going in.
+
+Note: this app isn't about your CSS skills, so save fancy styling for the end. Feel free to throw in any functional style you'd like along the way though.
 
 ## Setup 
 
@@ -80,8 +82,25 @@ You are going to need to create your own react app. You will also need to intial
 
 ## DIY Option
 
-If you would prefer to attempt this app without guidance, feel free to do so. You can just go off of the mockup and project summary. The instructions below can still act as an outline or support, but keep in mind that they probably won't match what you do exactly, which is okay. There are a bunch of different ways to code! 
+If you would prefer to attempt this app without guidance, feel free to do so. You can just go off of what you've read so far. The more detailed instructions below can still act as an outline or support, but keep in mind that they probably won't match what you do exactly, which is okay. There are a bunch of different ways to code! 
 
-## Step 1
+## Instructions
 
-### App.js
+### Step 1
+<hr>
+
+Goal: create and display a header component
+
+#### Header.js
+- in your `Components` folder, create a new component called `Header.js`
+- the component should display the name of the app
+
+#### App.js
+- delete the `<h1>` tag that we added earlier
+- import the `Header` component
+- render `Header` as a child of `App`
+
+### Step 2
+<hr>
+
+Goal: bring our data into App.js
