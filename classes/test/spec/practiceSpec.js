@@ -15,18 +15,7 @@ function showTheValue(x) {
 }
 
 //Test Suite
-// describe('Skills Check 3', function () {
-//   describe('Problem 1 - myName', function () {
-//     it('myName variable should exist', function () {
-//       expect(myName).toBeDefined()
-//     })
-//     it('should be the correct data type', function () {
-//       expect(typeof myName).toBe('string')
-//     })
-//   })
-// })
-
-describe(`Skills Check 3`, () => {
+describe(`Skills Check 3 - Classes`, () => {
 
   describe(`Problem 1 - Character class`, () => {
     it(`Character class should exist`, () => {
