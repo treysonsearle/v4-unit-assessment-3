@@ -45,7 +45,7 @@ The sections for classes and closures will each consist of following the same se
 # React
 ## Project Summary
 
-You are going to create an app from the ground up to practice what we have covered so far about React. The app is going to display a collection of books and users can make a list of titles from the collection. You can see a quick run through of that functionality below. There is also a higher quality [mockup](react/bookist-mockup.png) in the react folder of this repo and a deeper explanation later in these directions.
+You are going to create an app from the ground up to practice what we have covered so far about React. The app will display a list of book information - their covers, titles, and authors - from a pre-made array of data. When a book cover is clicked, its title should be added to a separate "shelf" list. You can see a quick run through of that functionality below, as well as a search feature from the advanced section. There is also a higher quality [mockup](react/bookist-mockup.png) in the react folder of this repo and a deeper explanation later in these directions.
 
 This app is supposed to challenge you and stretch your skills! Work hard at it and remember that you can reference whatever notes and code you need to. There won't be any solutions but the directions should provide a good amount of guidance.
 
