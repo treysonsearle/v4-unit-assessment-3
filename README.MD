@@ -5,7 +5,10 @@
 ## Project Summary
 Welcome to skills check 3! This skills check will have JavaScript sections similar to skills checks 1 & 2 as well as a React portion which is similar to afternoon projects that you have done. Remember to use past code, lecture notes & slides, and reference websites to help you as you complete this skills check.
 
-You should be able to finish this skills check in an 8 hour day. For part time programs this means it should take two days. On the first day, you should aim to complete [classes](##Classes) and [closures](##Closures) as well as begin the [react](#React) section. On the second day, you should aim to complete the react section. This skills check will cover topics from these lectures:
+For full time students, you should be able to finish this skills check in an 8 hour day. 
+For part time students this means it should take two days. On the first day, you should aim to complete [classes](##Classes) and [closures](##Closures) as well as begin the [react](#React) section. On the second day, you should aim to complete the react section. 
+
+This skills check will cover topics from these lectures:
 
 - [JavaScript 6](https://github.com/DevMountain/web-curriculum-v3/tree/master/11-javascript-6)
 - [React 1](https://github.com/DevMountain/web-curriculum-v3/tree/master/12-react-1)
@@ -50,7 +53,7 @@ This app is supposed to challenge you and stretch your skills! Work hard at it a
 <label for='gif'>preview of the app (search feature is advanced)</label>
 
 ### Planning
-In the react folder of this repo, there is an example [wireframe](react/bookist-wireframe.png) that shows a possible setup for your components (the dark gray box around book list and shelf just indicates a container element). Feel free to jot down notes or sketches that will help you plan this app while you read through this section. Any planning will help you as you get into coding.
+In the react folder of this repo, there is an example [wireframe](react/bookist-wireframe.png) that shows a possible setup for your components (the dark gray box around the book list and shelf just indicates a container element). Feel free to jot down notes or sketches that will help you plan this app while you read through this section. Any planning will help you as you get into coding.
 
 The app needs to have the following features:
 
