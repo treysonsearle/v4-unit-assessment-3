@@ -5,7 +5,10 @@
 ## Project Summary
 Welcome to skills check 3! This skills check will have JavaScript sections similar to skills checks 1 & 2 as well as a React portion which is similar to afternoon projects that you have done. Remember to use past code, lecture notes & slides, and reference websites to help you as you complete this skills check.
 
-You should be able to finish this skills check in an 8 hour day. For part time programs this means it should take two days. On the first day, you should aim to complete [classes](##Classes) and [closures](##Closures) as well as begin the [react](#React) section. On the second day, you should aim to complete the react section. This skills check will cover topics from these lectures:
+For full time students, you should be able to finish this skills check in an 8 hour day. 
+For part time students this means it should take two days. On the first day, you should aim to complete [classes](##Classes) and [closures](##Closures) as well as begin the [react](#React) section. On the second day, you should aim to complete the react section. 
+
+This skills check will cover topics from these lectures:
 
 - [JavaScript 6](https://github.com/DevMountain/web-curriculum-v3/tree/master/11-javascript-6)
 - [React 1](https://github.com/DevMountain/web-curriculum-v3/tree/master/12-react-1)
@@ -42,7 +45,7 @@ The sections for classes and closures will each consist of following the same se
 # React
 ## Project Summary
 
-You are going to create an app from the ground up to practice what we have covered so far about React. The app is going to display a collection of books and users can make a list of titles from the collection. You can see a quick run through of that functionality below. There is also a higher quality [mockup](react/bookist-mockup.png) in the react folder of this repo and a deeper explanation later in these directions.
+You are going to create an app from the ground up to practice what we have covered so far about React. The app will display a list of book information - their covers, titles, and authors - from a pre-made array of data. When a book cover is clicked, its title should be added to a separate "shelf" list. You can see a quick run through of that functionality below, as well as a search feature from the advanced section. There is also a higher quality [mockup](react/bookist-mockup.png) in the react folder of this repo and a deeper explanation later in these directions.
 
 This app is supposed to challenge you and stretch your skills! Work hard at it and remember that you can reference whatever notes and code you need to. There won't be any solutions but the directions should provide a good amount of guidance.
 
@@ -50,7 +53,7 @@ This app is supposed to challenge you and stretch your skills! Work hard at it a
 <label for='gif'>preview of the app (search feature is advanced)</label>
 
 ### Planning
-In the react folder of this repo, there is an example [wireframe](react/bookist-wireframe.png) that shows a possible setup for your components (the dark gray box around book list and shelf just indicates a container element). Feel free to jot down notes or sketches that will help you plan this app while you read through this section. Any planning will help you as you get into coding.
+In the react folder of this repo, there is an example [wireframe](react/bookist-wireframe.png) that shows a possible setup for your components (the dark gray box around the book list and shelf just indicates a container element). Feel free to jot down notes or sketches that will help you plan this app while you read through this section. Any planning will help you as you get into coding.
 
 The app needs to have the following features:
 
