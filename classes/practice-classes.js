@@ -59,7 +59,8 @@ class Character {
   }
   
   /*
-    Create an NPC named Ralph who is a human located in Niceland. His phrase is `I'm gonna wreck it!`. Store your new NPC in a variable called 'ralph'.
+    Create an NPC named Ralph who is a human located in Niceland. His phrase is `I'm gonna wreck it!`. 
+    Store your new NPC in a variable called 'ralph'.
   */
 
   //CODE HERE
@@ -122,8 +123,10 @@ class Character {
 
   /*
     Next, we'll create two Players.
-    Store the first in a variable called aang, his name should be 'Aang' and he's an airbender type with a 100 healthLevel and 100 attackLevel.
-    Store the second in a variable called ozai, his name should be 'Ozai' and he's a firebender type with a 100 healthLevel and 0 attackLevel.
+    Store the first in a variable called aang, his name should be 'Aang' 
+    and he's an airbender type with a 100 healthLevel and 100 attackLevel.
+    Store the second in a variable called ozai, his name should be 'Ozai' 
+    and he's a firebender type with a 100 healthLevel and 0 attackLevel.
   */
 
   //CODE HERE
@@ -132,7 +135,10 @@ class Character {
   const ozai = new Player('Ozai', 'firebender', 100, 0)
 
   /*
-    Let's see how a fight between these two would go. Create a variable called 'battle' whose value is Ozai's defend method with Aang's attackLevel passed in as an argument. (You can console log battle to see what happens)
+    Let's see how a fight between these two would go. 
+    Create a variable called 'battle' whose value is Ozai's defend method 
+    with Aang's attackLevel passed in as an argument. 
+    (You can console log battle to see what happens)
   */
 
   //CODE HERE
@@ -174,8 +180,11 @@ class Character {
   }
 
 /*
-  Create a hero named 'Fire Spitter' whose type is 'dragon'. Fire Spitter's healthLevel and attackLevels should both be 5000. Store this information in a variable called fireSpitter.
-  After you create Fire Spitter, add three super powers using the addSuperPower method. The first one should be 'spitting fire' and the other two are up to you.
+  Create a hero named 'Fire Spitter' whose type is 'dragon'. 
+  Fire Spitter's healthLevel and attackLevels should both be 5000. 
+  Store this information in a variable called fireSpitter.
+  After you create Fire Spitter, add three super powers using the addSuperPower method. 
+  The first one should be 'spitting fire' and the other two are up to you.
   Last, invoke useSuperPower passing in 0 for the index and store the result in a variable called fireSpitterAttack.
 */
 
