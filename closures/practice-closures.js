@@ -80,7 +80,7 @@
     Use the module pattern to create a plant height tracker, name your function 'plantTracker'
     Set up two variables inside plantTracker, 'plant' which should be set to 'fern' and 'height' which should be set to 12
     Return 3 functions using the module pattern
-      - 'readInfo' should return a string of 'This is a PLANT plant that is HEIGHT inches tall.'
+      - 'readInfo' should return a string of 'This is a PLANT plant that is HEIGHT inches tall.', where PLANT is the value of the plant variable and HEIGHT is the value of the height variable.
       - 'waterPlant' should add 1 to the height and return the new height
       - 'prunePlant' should subtract 1 from the height and return the new height
   */
@@ -107,7 +107,7 @@
 
   /*
     Use the module pattern to create an inventory, name the function 'inventory'
-    Set up a variable inside inventory called 'products' initialized as an empty array
+    Set up a variable inside inventory called 'products' initialized as an empty array.  
     Return 3 functions using the module pattern
       - 'readProducts' should return the products array
       - 'addToProducts' should receive one argument, a string, and add it into the products array

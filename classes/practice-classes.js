@@ -17,16 +17,15 @@
 //CODE HERE
 
 class Character {
-    constructor(name, type) {
-      this.name = name
-      this.type = type
-    }
-  
-    getInfo() {
-      return `This is a ${this.type} character named ${this.name}.`
-    }
-}
+  constructor(name, type) {
+    this.name = name;
+    this.type = type;
+  }
 
+  getInfo() {
+    return `This is a ${this.type} character named ${this.name}.`;
+  }
+}
 
 //////////////////PROBLEM 2////////////////////
 
@@ -41,43 +40,43 @@ class Character {
       - Example: 'Porter: What brings a pirate like yourself to this peaceful township?'
 
   Call your new class NPC
-  Be sure to match the punctuation of the string.
+  
+  BE SURE TO MATCH THE PUNCTUATION OF THE STRING
 */
 
 //CODE HERE
-  
-  class NPC extends Character {
-    constructor(name, type, location, phrase) {
-      super(name, type)
-      this.location = location
-      this.phrase = phrase
-    }
-  
-    dialogue() {
-      return `${this.name}: ${this.phrase}`
-    }
+
+class NPC extends Character {
+  constructor(name, type, location, phrase) {
+    super(name, type);
+    this.location = location;
+    this.phrase = phrase;
   }
-  
-  /*
-    Create an NPC named Ralph who is a human located in Niceland. His phrase is `I'm gonna wreck it!`. 
+
+  dialogue() {
+    return `${this.name}: ${this.phrase}`;
+  }
+}
+
+/*
+    Create an NPC named Ralph who is a human located in Niceland. His phrase should be `I'm gonna wreck it!`. 
     Store your new NPC in a variable called 'ralph'.
   */
 
-  //CODE HERE
+//CODE HERE
 
-  const ralph = new NPC('Ralph', 'human', 'Niceland', `I'm gonna wreck it!`)
+const ralph = new NPC("Ralph", "human", "Niceland", `I'm gonna wreck it!`);
 
-  /*
+/*
     Next you're going to create three variables to store information about Ralph.
-    First, a variable named ralphsInfo whose value will be the invocation of Ralph's getInfo method.
-    Second, a variable named ralphsDialogue whose value will be the invocation of Ralph's dialogue method.
-    Third, a variable named ralphsLocation whose value will be Ralph's location.
+    First, make a variable named ralphsInfo whose value will be the invocation of Ralph's getInfo method.
+    Second, make a variable named ralphsDialogue whose value will be the invocation of Ralph's dialogue method.
+    Third, make a variable named ralphsLocation whose value will be Ralph's location.
   */
- 
-  const ralphsInfo = ralph.getInfo()
-  const ralphsDialogue = ralph.dialogue()
-  const ralphsLocation = ralph.location
-  
+
+const ralphsInfo = ralph.getInfo();
+const ralphsDialogue = ralph.dialogue();
+const ralphsLocation = ralph.location;
 
 //////////////////PROBLEM 3////////////////////
 
@@ -99,29 +98,29 @@ class Character {
 */
 
 //CODE HERE
-  
-  class Player extends Character {
-    constructor(name, type, healthLevel, attackLevel) {
-      super(name, type)
-      this.healthLevel = healthLevel
-      this.attackLevel = attackLevel
-    }
-  
-    defend(amount) {
-      this.healthLevel = this.healthLevel - amount
-      if (this.healthLevel > 0) {
-        return {
-          attackStrength: amount, 
-          remainingHealth: this.healthLevel, 
-          message: `${this.name} is still in the fight!`
-        }
-      } else {
-        return `${this.name} has been defeated!`
-      }
-    }
+
+class Player extends Character {
+  constructor(name, type, healthLevel, attackLevel) {
+    super(name, type);
+    this.healthLevel = healthLevel;
+    this.attackLevel = attackLevel;
   }
 
-  /*
+  defend(amount) {
+    this.healthLevel = this.healthLevel - amount;
+    if (this.healthLevel > 0) {
+      return {
+        attackStrength: amount,
+        remainingHealth: this.healthLevel,
+        message: `${this.name} is still in the fight!`,
+      };
+    } else {
+      return `${this.name} has been defeated!`;
+    }
+  }
+}
+
+/*
     Next, we'll create two Players.
     Store the first in a variable called aang, his name should be 'Aang' 
     and he's an airbender type with a 100 healthLevel and 100 attackLevel.
@@ -129,22 +128,21 @@ class Character {
     and he's a firebender type with a 100 healthLevel and 0 attackLevel.
   */
 
-  //CODE HERE
+//CODE HERE
 
-  const aang = new Player('Aang', 'airbender', 100, 100)
-  const ozai = new Player('Ozai', 'firebender', 100, 0)
+const aang = new Player("Aang", "airbender", 100, 100);
+const ozai = new Player("Ozai", "firebender", 100, 0);
 
-  /*
+/*
     Let's see how a fight between these two would go. 
     Create a variable called 'battle' whose value is Ozai's defend method 
     with Aang's attackLevel passed in as an argument. 
     (You can console log battle to see what happens)
   */
 
-  //CODE HERE
-  
-  const battle = ozai.defend(aang.attackLevel)
-  
+//CODE HERE
+
+const battle = ozai.defend(aang.attackLevel);
 
 //////////////////PROBLEM 4////////////////////
 
@@ -163,21 +161,21 @@ class Character {
 */
 
 //CODE HERE
-  
-  class Hero extends Player {
-    constructor(name, type, healthLevel, attackLevel) {
-        super(name, type, healthLevel, attackLevel)
-        this.superPowers = []
-    }
 
-    addSuperPower(power) {
-        this.superPowers.push(power)
-    }
-  
-    useSuperPower(index) {
-        return `${this.name} used ${this.superPowers[index]}!`
-    }
+class Hero extends Player {
+  constructor(name, type, healthLevel, attackLevel) {
+    super(name, type, healthLevel, attackLevel);
+    this.superPowers = [];
   }
+
+  addSuperPower(power) {
+    this.superPowers.push(power);
+  }
+
+  useSuperPower(index) {
+    return `${this.name} used ${this.superPowers[index]}!`;
+  }
+}
 
 /*
   Create a hero named 'Fire Spitter' whose type is 'dragon'. 
@@ -188,12 +186,12 @@ class Character {
   Last, invoke useSuperPower passing in 0 for the index and store the result in a variable called fireSpitterAttack.
 */
 
-  //CODE HERE
+//CODE HERE
 
-  let fireSpitter = new Hero('Fire Spitter', 'dragon', 5000, 5000)
+let fireSpitter = new Hero("Fire Spitter", "dragon", 5000, 5000);
 
-  fireSpitter.addSuperPower('spitting fire')
-  fireSpitter.addSuperPower('flying')
-  fireSpitter.addSuperPower('invisibility')
+fireSpitter.addSuperPower("spitting fire");
+fireSpitter.addSuperPower("flying");
+fireSpitter.addSuperPower("invisibility");
 
-  let fireSpitterAttack = fireSpitter.useSuperPower(0)
+let fireSpitterAttack = fireSpitter.useSuperPower(0);
