@@ -34,14 +34,12 @@
 
 //CODE HERE
 
-
 /*
     Create an NPC named Ralph who is a human located in Niceland. His phrase should be `I'm gonna wreck it!`. 
     Store your new NPC in a variable called 'ralph'.
 */
 
 //CODE HERE
-
 
 /*
     Next you're going to create three variables to store information about Ralph.
@@ -51,7 +49,6 @@
 */
 
 //CODE HERE
-
 
 //////////////////PROBLEM 3////////////////////
 
@@ -78,8 +75,6 @@
 
 //CODE HERE
 
-
-
 /*
     Next, we'll create two Players.
     Store the first in a variable called aang, his name should be 'Aang' 
@@ -90,7 +85,6 @@
 
 //CODE HERE
 
-
 /*
     Let's see how a fight between these two would go. 
     Create a variable called 'battle' whose value is Ozai's 
@@ -100,14 +94,13 @@
 
 //CODE HERE
 
-
 //////////////////PROBLEM 4////////////////////
 
 /*
   Now you'll make a hero class that extends Player
   Call your new class Hero
   Each hero has all of the same properties as a player with the following additional property:
-    - superPowers (an array)
+    - superPowers (an empty array)
   Each hero has the following additional methods:
     - addSuperPower(power)
       - Accepts a power (string) as a parameter and adds it to the hero's superPower array
@@ -119,7 +112,6 @@
 
 //CODE HERE
 
-
 /*
   Create a hero named 'Fire Spitter' whose type is 'dragon'. 
   Fire Spitter's healthLevel and attackLevels should both be 5000. 
@@ -130,4 +122,3 @@
 */
 
 //CODE HERE
-

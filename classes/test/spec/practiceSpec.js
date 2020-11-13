@@ -1,11 +1,16 @@
 //Helper Functions
 const countFiles = async (path, str, count) => {
-  const response = await axios.get(`http://localhost:6731/api/count?path=${path}&str=${str}&count=${count}`)
+  const response = await axios.get(
+    `http://localhost:6731/api/count?path=${path}&str=${str}&count=${count}`
+  )
   return response.data
 }
 
 const searchFiles = async (pathArr, strArr) => {
-  const response = await axios.post(`http://localhost:6731/api/search`, {pathArr, strArr})
+  const response = await axios.post(`http://localhost:6731/api/search`, {
+    pathArr,
+    strArr,
+  })
   return response.data
 }
 
@@ -14,13 +19,15 @@ const jsFile = 'classes/practice-classes.js'
 
 //Test Suite
 describe(`Unit Assessment 3 - Classes`, () => {
-
   describe(`Problem 1 - Character class`, () => {
     it(`Character class should exist`, () => {
       expect(Character).toBeDefined()
     })
     it(`sets properties in the constructor using 'this'`, async () => {
-      const response = await searchFiles([jsFile], ['this.name=name', 'this.type=type'])
+      const response = await searchFiles(
+        [jsFile],
+        ['this.name=name', 'this.type=type']
+      )
       expect(response).toBe(true)
     })
     it(`getInfo should be a function`, () => {
@@ -35,7 +42,7 @@ describe(`Unit Assessment 3 - Classes`, () => {
       it('resulting character should have the type human', () => {
         expect(char.type).toBe(`human`)
       })
-      it('should be able to run the getInfo method off Luigi and get the correct sentance', () => {
+      it('should be able to run the getInfo method off Luigi and get the correct sentence', () => {
         expect(char.getInfo()).toBe(`This is a human character named Luigi.`)
       })
     })
@@ -51,7 +58,7 @@ describe(`Unit Assessment 3 - Classes`, () => {
     })
     it(`calls super in the constructor`, async () => {
       const responseOne = await countFiles(jsFile, 'super(name,type)'),
-      responseTwo = await countFiles(jsFile, 'super(type,name)')
+        responseTwo = await countFiles(jsFile, 'super(type,name)')
       expect(responseOne || responseTwo).toBe(true)
     })
     it(`dialogue should be a function`, () => {
@@ -117,12 +124,12 @@ describe(`Unit Assessment 3 - Classes`, () => {
       })
       it(`calls super in the constructor`, async () => {
         const responseOne = await countFiles(jsFile, 'super(name,type)', 2),
-        responseTwo = await countFiles(jsFile, 'super(type,name)', 2)
+          responseTwo = await countFiles(jsFile, 'super(type,name)', 2)
         expect(responseOne || responseTwo).toBe(true)
       })
       it(`defend method functions correctly`, () => {
         const player = new Player('Yenza', 'Cloral', 100, 100),
-        attackResult = player.defend(30)
+          attackResult = player.defend(30)
         expect(attackResult.attackStrength).toEqual(30)
         expect(attackResult.message).toEqual('Yenza is still in the fight!')
         expect(attackResult.remainingHealth).toEqual(70)
@@ -191,7 +198,7 @@ describe(`Unit Assessment 3 - Classes`, () => {
         expect(ozai.attackLevel).toBe(0)
       })
     })
-    
+
     describe(`battle`, () => {
       it(`should exist`, () => {
         expect(battle).toBeDefined()
@@ -212,19 +219,19 @@ describe(`Unit Assessment 3 - Classes`, () => {
         expect(response).toBe(true)
       })
       it(`addSuperPower should exist`, () => {
-        const hero = new Hero(`Wonder Woman`, `demigod`, 100, 100) 
+        const hero = new Hero(`Wonder Woman`, `demigod`, 100, 100)
         expect(hero.addSuperPower).toBeDefined()
       })
       it(`addSuperPower should be a function`, () => {
-        const hero = new Hero(`Wonder Woman`, `demigod`, 100, 100) 
+        const hero = new Hero(`Wonder Woman`, `demigod`, 100, 100)
         expect(typeof hero.addSuperPower).toBe('function')
       })
       it(`useSuperPower should exist`, () => {
-        const hero = new Hero(`Wonder Woman`, `demigod`, 100, 100) 
+        const hero = new Hero(`Wonder Woman`, `demigod`, 100, 100)
         expect(hero.useSuperPower).toBeDefined()
       })
       it(`useSuperPower should be a function`, () => {
-        const hero = new Hero(`Wonder Woman`, `demigod`, 100, 100) 
+        const hero = new Hero(`Wonder Woman`, `demigod`, 100, 100)
         expect(typeof hero.useSuperPower).toBe('function')
       })
     })
@@ -277,8 +284,6 @@ describe(`Unit Assessment 3 - Classes`, () => {
       it(`fireSpitterAttack should use 'spitting fire' and result in the correct string`, () => {
         expect(fireSpitterAttack).toBe(`Fire Spitter used spitting fire!`)
       })
-
-
     })
   })
 })
