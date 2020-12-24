@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.shelf {
+  
+  width: 18%;
+  float: right;
+  height: 80vh;
+  margin-top: 5vh;
+  
+  border-left:solid 1px lightslategray ;
+ 
+}
+
+.your-shelf{
+  width: 100%;
+  font-size: 22px;
+  text-align: center;
+}
+
+.shelf-button{
+  width: fit-content;
+  text-align: center;
+  margin-top: 2vh;
+  margin-left: 40%;
+}
+
+.book-title{
+  width: 100%;
+  margin-top: 2vh;
+}
+
+.book-list {
+width: 80%;
+height: 60vh;
+float: left;
+margin-top: 5vh;
+}
+
+
+.title{
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  box-shadow: 0 15px 15px -15px lightgray;
+  
+  
+}
+.book {
+  width: 12%;
+  height: 30vh;
+  float: left;
+  margin: 20px;
+  margin-top: 5vh;
+}
+
+.search {
+ 
+  text-align: center;
+  margin-left: 3%;
+}
+
+img {
+  width: 133px;
+  height: auto;
+  margin: 10px;
+}
+
+p {
+  font-size: 11px;
+  text-align: center;
+}
+
+.searchBar {
+  position: absolute;
+  width: 80%;
+  margin-left: 38%;
+  margin-top: 3vh;
+  
+  
+}
